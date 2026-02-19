@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fdf2e9; /* สีพื้นหลัง */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 450px; /* ขยายความกว้างเพื่อใส่ 2 กล่อง */
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    background-color: #fffaf5;
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/* ส่วนจัดวางกล่องนับเลข 2 กล่องให้อยู่ข้างกัน */
+.counters-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* หน้าตากล่องย่อยแต่ละกล่อง */
+.counter-box {
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 15px;
+    width: 50%;
+    background-color: #fff;
+}
+
+/* สีตัวหนังสือชาย-หญิง */
+.title-man { color: #3498db; margin: 0; font-size: 24px; }
+.title-woman { color: #ff6eb4; margin: 0; font-size: 24px; }
+
+.display-area {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-large {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.control-buttons {
+    margin-bottom: 20px;
+}
+
+.control-buttons button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.log-area {
+    border: 1px solid #333;
+    background-color: #fff;
+    height: 120px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
